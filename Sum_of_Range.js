@@ -1,8 +1,8 @@
 
-var range = function(start,end, step = 0)
+var range = function(start,end, step = 1)
 	{	
 		var arr = [];	
-		for(var x = start; x <= end; x = x + 1 + step)
+		for(var x = start; x <= end; x = x + step)
 			arr.push(x);
 		for(var x = start; x >= end; x = x + step)
 			arr.push(x);

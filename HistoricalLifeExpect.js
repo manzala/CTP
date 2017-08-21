@@ -1,5 +1,6 @@
 var ancestry = require("./ancestry.js"); // String version of data
 var ancestryList = JSON.parse(ancestry); // List version of data
+console.log(ancestryList)
 var centuryList = {};
 var arr16= [];
 var arr17= [];
@@ -7,6 +8,8 @@ var arr18= [];
 var arr19= [];
 var arr20= [];
 var arr21= [];
+var arr22 = ["Hi"];
+console.log(arr22)
 
 function average(array) {
   function plus(a, b) { return a + b; }
@@ -54,7 +57,7 @@ ancestryList.forEach(function(person) {
 	
 });
 
-
+			
 
 console.log(average(arr16).toFixed(1));
 console.log(average(arr17).toFixed(1));

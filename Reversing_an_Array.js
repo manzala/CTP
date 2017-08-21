@@ -1,9 +1,10 @@
 var reverseArrayInPlace = function(arr)
 {
 var count = 0;
-for (var x = arr.length-1 ;x>0 ;x--)
+for (var x = arr.length-1 ;x!=count ;x--)
 	{
 	var temp = arr[count];
+	console.log(arr)
 	arr[count]= arr[x];
 	arr[x] = temp;
 	count++;
@@ -19,7 +20,7 @@ for (index in arr)
 		newArr.push(arr[index]);
 	}
 var count = 0;
-for (var x = arr.length-1 ;x>0 ;x--)
+for (var x = arr.length-1 ;x!=0 ;x--)
 	{
 	var temp = newArr[count];
 	newArr[count]= newArr[x];
